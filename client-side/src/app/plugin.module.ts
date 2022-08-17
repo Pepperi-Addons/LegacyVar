@@ -46,7 +46,7 @@ import {AddonService} from 'pepperi-addon-service';
     }],
     multi: true
   }],
-  bootstrap: [PluginComponent
+  bootstrap: [/*PluginComponent*/
             ],
   entryComponents: [
     PluginComponent

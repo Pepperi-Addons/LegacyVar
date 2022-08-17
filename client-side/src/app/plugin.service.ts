@@ -1,19 +1,18 @@
-import { AddTypeDialogComponent } from './dialogs/add-type-dialog/add-type-dialog.component';
 import jwt from 'jwt-decode';
 import { CodeJob, PapiClient, AuditLog } from '@pepperi-addons/papi-sdk';
 import { Injectable} from '@angular/core';
 import { Http } from '@angular/http';
 //@ts-ignore
-import {UserService} from 'pepperi-user-service';
+//import {UserService} from 'pepperi-user-service';
 //@ts-ignore
-import { PepperiRowData, PepperiFieldData, FIELD_TYPE } from 'pepperi-main-service';
+//import { PepperiRowData, PepperiFieldData, FIELD_TYPE } from 'pepperi-main-service';
 // @ts-ignore
-import {EnvVariables} from 'pepperi-environment-variables';
+//import {EnvVariables} from 'pepperi-environment-variables';
 // @ts-ignore
-import {AddonService} from 'pepperi-addon-service';
+//import {AddonService} from 'pepperi-addon-service';
 import { MatDialogConfig, MatDialog } from '@angular/material';
 //@ts-ignore
-import {PepperiDataConverterService} from 'pepperi-data-converter';
+//import {PepperiDataConverterService} from 'pepperi-data-converter';
 
 @Injectable()
 export class PluginService {

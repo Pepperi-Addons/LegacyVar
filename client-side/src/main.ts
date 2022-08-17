@@ -1,1 +1,1 @@
-export { PluginModule } from './app/plugin.module';
+import('./bootstrap').catch(err => console.error(err));
