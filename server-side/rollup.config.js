@@ -8,7 +8,7 @@ export default config.Endpoints.map(endpoint => {
         input: endpoint,
         output: [
          {
-          dir: '../publish/api',
+          dir: '../publish/',
           format: 'cjs'
          }
         ],
@@ -21,7 +21,8 @@ export default config.Endpoints.map(endpoint => {
                      module: "es2015",
                      declaration: false
                  }
-             }
+             },
+             include: ['**/*.ts', '../shared/**/*.ts']
           }),
           resolve(),
           commonjs()
