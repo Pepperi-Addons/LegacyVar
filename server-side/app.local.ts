@@ -3,13 +3,14 @@ import config from '../addon.config.json';
 
 const dir = __dirname;
 const server = new DebugServer({
-    addonUUID: process.env.AddonUUID,
+    addonUUID: config.AddonUUID,
     apiDirectory: dir,
     port: config.DebugPort
 });
 
 // serve the plugin file locally
 server.addStaticFolder(`/assets/plugins/${config.AddonUUID}/${config.AddonVersion}`, process.cwd() +  '/../publish/editors');
+server.addStaticFolder(`/`, process.cwd() +  '/../publish/editors');
 
 // serve the plugin assets locally
 server.addStaticFolder(`/Addon/Public/${config.AddonUUID}/${config.AddonVersion}`, process.cwd() +  '/../publish/assets');

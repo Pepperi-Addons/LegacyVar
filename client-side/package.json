@@ -1,18 +1,17 @@
 {
-  "name": "plugin",
-  "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "build-prod": "ng build --configuration production",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
-  "private": true,
-  
-  "dependencies": {
+    "name": "plugin",
+    "version": "0.0.0",
+    "scripts": {
+      "ng": "ng",
+      "start": "ng serve",
+      "build": "ng build",
+      "build-prod": "ng build --configuration production",
+      "test": "ng test",
+      "lint": "ng lint",
+      "e2e": "ng e2e"
+    },
+    "private": true,
+    "dependencies": {
         "@angular/cdk": "14.0.2",
         "@angular/common": "14.0.2",
         "@angular/compiler": "14.0.2",
@@ -46,9 +45,8 @@
         "rxjs": "~7.5.0",
         "tslib": "^2.0.0",
         "zone.js": "~0.11.5"   
-  },
-  "devDependencies": {
-
+    },
+    "devDependencies": {
         "@angular-architects/module-federation": "^14.3.8",
         "@angular-architects/module-federation-tools": "^14.3.10",
         "@angular-builders/custom-webpack": "^14.0.0",
@@ -73,5 +71,5 @@
         "ts-node": "~8.3.0",
         "tslint": "~6.1.0",
         "typescript": "~4.7.3"    
-  }
+    }
 }

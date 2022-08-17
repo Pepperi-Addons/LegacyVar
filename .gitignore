@@ -1,3 +1,7 @@
 /publish/api
 /publish/editors
 var_sk
+client-side/.angular/
+client-side/node_modules/
+node_modules/
+publish/
