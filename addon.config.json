@@ -1,0 +1,42 @@
+{
+  "AddonUUID": "2cabad50-2df0-4136-abda-03ab9c901953",
+  "AddonVersion": "9.5.112",
+  "DebugPort": 4400,
+  "WebappBaseUrl": "https://app.sandbox.pepperi.com",
+  "DefaultEditor": "editor",
+  "Endpoints": [
+    "installation.js",
+    "api.ts"
+  ],
+  "Editors": [
+    "editor"
+  ],
+  "Assets": [
+    "en.json",
+    "he.json"
+  ],
+  "PublishConfig":
+  {
+    "Editors":[
+      {"ParentPackageName": "Var","PackageName": "editor?view=var_distributors&uri=grid/vardistributors","Description": "Var Distributors"},
+      {"ParentPackageName": "Var","PackageName": "editor?view=var_pepperi_system","Description": "Pepperi System"},
+      {"ParentPackageName": "Var","PackageName": "editor?view=var_pepperi_operation","Description": "Pepperi Operation"},
+      {"ParentPackageName": "Var","PackageName": "editor?view=var_atd_templates","Description": "ATD Templates"},
+      {"ParentPackageName": "Var","PackageName": "editor?view=var_ui_control_field_bank","Description": "UI Control Field Bank"},
+      {"ParentPackageName": "Var","PackageName": "editor?view=var_ui_control_properties","Description": "UI Control Properties"},
+      {"ParentPackageName": "Var","PackageName": "editor?view=var_features_visibility","Description": "UI Features Visibility"},
+      {"ParentPackageName": "Var","PackageName": "editor?view=var_manage_campaigns","Description": "UI Manage Campaigns"},
+      {"ParentPackageName": "Var","PackageName": "editor?view=var_old_workflow_migration","Description": "Old Workflow Migration"},
+      {"ParentPackageName": "Var","PackageName": "editor?view=var_purge_tables_data","Description": "Purge Tables Data"},                                        
+      {"ParentPackageName": "Var","PackageName": "editor?view=var_generic_list_migrationPage","Description": "Generic List Migration"},
+      {"ParentPackageName": "Var","PackageName": "editor?view=var_manage_addons&uri=grid/addonmanager","Description": "Manage Addons"},
+      {"ParentPackageName": "Var","PackageName": "editor?view=var_configurations_details","Description": "Configuration Details"},
+      {"ParentPackageName": "Var","PackageName": "editor?view=var_create_new_distributor","Description": "Create New Distributor"}
+     ],
+     
+    "Dependencies":{
+        "papi":"9.5.296",        
+        "webapp":"16.50.61"
+    }
+  } 
+}
