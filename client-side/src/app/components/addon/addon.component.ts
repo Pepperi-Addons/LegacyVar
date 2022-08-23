@@ -72,6 +72,7 @@ export class AddonComponent implements OnInit{
     }
     
     async ngOnInit() {
+        // debugger;
         // console.log('init container height ' + this.containerHeight);    
         this.fillSrcArray();
         this.newStudioURL = await this.addonService.papiClient.get('/configuration_fields?key=NewStudioUrl');
