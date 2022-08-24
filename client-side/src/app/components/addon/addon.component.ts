@@ -79,22 +79,24 @@ export class AddonComponent implements OnInit{
 
         let params = (new URL(window.location.href)).searchParams;
         this.view = params.get("view");
-
+// debugger;
         if (this.view) {
             if (!this.addon) {
                 this.addonService.papiClient.addons.installedAddons.get(this.addonService.addonUUID).then(addon => {
                     this.addon = addon;
                     const frameSrc = this.newStudioURL.Value + '/' +  'cookieVersion.html?ver=' +  this.addon.Version;
-                    this.iframeCookieVersionSrc = this.sanitizer.bypassSecurityTrustResourceUrl(frameSrc);    
+                    // this.iframeCookieVersionSrc = this.sanitizer.bypassSecurityTrustResourceUrl(frameSrc);    
+                    this.iframeCookieVersionSrc = frameSrc;    
         
                     this.tempSrc = this.newStudioURL.Value + '/' + this.iframesDic[this.view] ;
-                    //this.tempSrc = "http://localhost/" + this.iframesDic[this.view] ;    
+                    // this.tempSrc = "http://localhost/" + this.iframesDic[this.view] ;    
                     const signToadd = this.tempSrc.indexOf('?') > -1 ? '&' : '?';
                     this.tempSrc += signToadd + 'webAppIframe=true';
         
-                    setTimeout(() => {
-                        this.iframeSRC = this.sanitizer.bypassSecurityTrustResourceUrl(this.tempSrc);
-                    }, 50);
+                    // setTimeout(() => {
+                        // this.iframeSRC = this.sanitizer.bypassSecurityTrustResourceUrl(this.tempSrc);
+                        this.iframeSRC = this.tempSrc;
+                    // }, 50);
                 });
             }
         }

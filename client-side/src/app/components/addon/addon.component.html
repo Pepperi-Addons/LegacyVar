@@ -1,7 +1,7 @@
 <div id="legacy-var-main-container" >
-    <iframe style="display:none" width="0px" height="0px"  [src]="iframeCookieVersionSrc"></iframe>
+    <iframe style="display:none" width="0px" height="0px" [src]="iframeCookieVersionSrc | safe"></iframe>
     <!-- <iframe class="embed-responsive-item" id="myFrame" #iframe  [height]="containerHeight - 15" width="100%"  [src]="iframeSRC"></iframe> -->
-    <iframe class="embed-responsive-item" id="myFrame" #iframe  height="100%" width="100%"  [src]="iframeSRC"></iframe>
+    <iframe class="embed-responsive-item" id="myFrame" #iframe  height="100%" width="100%" [src]="iframeSRC | safe"></iframe>
 </div>
     
     
