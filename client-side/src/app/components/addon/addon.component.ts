@@ -93,10 +93,10 @@ export class AddonComponent implements OnInit{
                     const signToadd = this.tempSrc.indexOf('?') > -1 ? '&' : '?';
                     this.tempSrc += signToadd + 'webAppIframe=true';
         
-                    // setTimeout(() => {
+                    setTimeout(() => {
                         // this.iframeSRC = this.sanitizer.bypassSecurityTrustResourceUrl(this.tempSrc);
                         this.iframeSRC = this.tempSrc;
-                    // }, 50);
+                    }, 50);
                 });
             }
         }
