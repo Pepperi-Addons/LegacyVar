@@ -10,7 +10,7 @@ export class EmptyRouteComponent {}
 
 const routes: Routes = [
     {
-        path: '**',
+        path: '',
         loadChildren: () => import('./components/settings/settings.module').then(m => m.SettingsModule),
     },
     {
